@@ -117,8 +117,7 @@ body {
     }
 }
 
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 480px) {
     body {
         display: block;
         width: 100%;
@@ -128,7 +127,7 @@ body {
         main {
             display: block;
             width: 100%;
-            
+
             margin: auto;
             border-radius: 0%;
             box-shadow: none;
@@ -143,17 +142,16 @@ body {
                     justify-content: space-between;
                     .info__headings {
                         h4 {
-                            margin: 20px 20px 20px 0;
+                            margin: 20px 35px 20px 0;
                         }
                     }
                     .info__content {
                         margin-right: 60px;
                     }
-                    
                 }
                 .social-networks {
                     font-size: 1.1rem;
-                    margin:  20px 0 20px 0;
+                    margin: 20px 0 20px 0;
                 }
             }
 
@@ -168,7 +166,7 @@ body {
                     top: 0;
                     h1 {
                         margin: 10px 0;
-                        font-size: 2.5rem;
+                        font-size: 2.4rem;
                     }
                     hr {
                         display: none;
