@@ -1,0 +1,20 @@
+{
+  "name": "epam_js_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "style": "sass --watch style.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avpankov/EPAM_JS_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avpankov/EPAM_JS_lab/issues"
+  },
+  "homepage": "https://github.com/avpankov/EPAM_JS_lab#readme"
+}
