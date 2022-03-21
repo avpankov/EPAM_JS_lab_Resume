@@ -161,10 +161,12 @@ body {
 
                 }
                 .social-networks {
+                    overflow: auto;
                     font-size: 1.1rem;
                     margin: 20px 0 20px 0;
+                    padding: 0;
                     a {
-                        margin: 0 30px;
+                        margin: 0 25px;
                     }
                 }
             }

@@ -140,11 +140,13 @@ body footer a {
     margin: 20px 35px 20px 0;
   }
   body main aside .social-networks {
+    overflow: auto;
     font-size: 1.1rem;
     margin: 20px 0 20px 0;
+    padding: 0;
   }
   body main aside .social-networks a {
-    margin: 0 30px;
+    margin: 0 25px;
   }
   body main section {
     width: 100%;
