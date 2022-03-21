@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "style": "sass --watch style.scss style.css",
+    "style": "sass --watch styles/style1/style.scss styles/style1/style.css",
+    "style2": "sass --watch styles/style2/style2.scss styles/style2/style2.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,5 +1,6 @@
 $primary-color: rgb(46, 46, 46);
 $text-color: rgb(184, 184, 184);
+$additional-color: #f9f9f9;
 $title-font: "Roboto", sans-serif;
 $text-font: "Roboto Serif", serif;
 
@@ -12,7 +13,7 @@ $text-font: "Roboto Serif", serif;
 body {
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: $text-font;
     color: $text-color;
     h1,
@@ -31,9 +32,9 @@ body {
 
         aside {
             width: 30%;
-            background-color: #f9f9f9;
+            background-color: $additional-color;
             border-radius: 25px 0 0 25px;
-            padding: 100px 50px 50px 50px;
+            padding: 70px 50px 50px 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -87,7 +88,7 @@ body {
         section {
             width: 70%;
             border-radius: 0 25px 25px 0;
-            padding: 100px 100px 50px 50px;
+            padding: 70px 100px 50px 50px;
 
             .greeting {
                 margin-top: 30px;
@@ -110,9 +111,18 @@ body {
             }
 
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
+                line-height: 18px;
                 margin: 30px 0;
             }
+        }
+    }
+    footer {
+        background-color: $text-color;
+        padding: 20px;
+        text-align: center;
+        a {
+            color: $additional-color;
         }
     }
 }
