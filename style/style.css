@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Serif", serif;
+  color: #b8b8b8;
+}
+body h1,
+body h4 {
+  color: #2e2e2e;
+}
+body .flexboxlayout {
+  align-self: center;
+  margin: auto;
+  width: 60vw;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px grey;
+  display: flex;
+  flex-direction: row;
+}
+body .flexboxlayout aside {
+  width: 30%;
+  background-color: #f9f9f9;
+  border-radius: 25px 0 0 25px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  overflow: auto;
+}
+body .flexboxlayout aside img {
+  display: block;
+  border-radius: 50%;
+  max-width: 70%;
+  margin: 20px 0;
+}
+body .flexboxlayout aside .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 0.7vw;
+}
+body .flexboxlayout aside .info .info__headings {
+  text-transform: uppercase;
+}
+body .flexboxlayout aside .info .info__headings h4 {
+  line-height: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+  margin: 20px 0.7vw 20px 0;
+}
+body .flexboxlayout aside .info .info__content p {
+  line-height: 14px;
+  margin: 20px 0 20px 0;
+}
+body .flexboxlayout aside .info .info__content p a {
+  color: #b8b8b8;
+}
+body .flexboxlayout aside .social-networks {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .flexboxlayout aside .social-networks a {
+  color: #b8b8b8;
+  font-size: 1.2rem;
+}
+body .flexboxlayout section {
+  width: 70%;
+  height: 100%;
+  border-radius: 0 25px 25px 0;
+  padding: 50px 100px 50px 50px;
+  overflow-y: auto;
+}
+body .flexboxlayout section .greeting {
+  margin-top: 30px;
+}
+body .flexboxlayout section .greeting h4 {
+  font-family: "Roboto", sans-serif;
+}
+body .flexboxlayout section .greeting h1 {
+  margin: 20px 0 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4vw;
+}
+body .flexboxlayout section .greeting h1 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+body .flexboxlayout section .greeting hr {
+  width: 85%;
+}
+body .flexboxlayout section p {
+  font-size: 0.9rem;
+  line-height: 18px;
+  margin: 30px 0;
+}
+body footer {
+  background-color: #b8b8b8;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+body footer a {
+  color: #f9f9f9;
+}
+body #layout-change {
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #b8b8b8;
+  cursor: pointer;
+}
+body .floatlayout {
+  display: block;
+}
+body .floatlayout aside {
+  height: 100%;
+  float: left;
+  display: block;
+}
+body .floatlayout aside img {
+  margin: 20px auto;
+}
+body .floatlayout section {
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body .flexboxlayout, body .floatlayout {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    margin: auto;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+  body .flexboxlayout aside, body .floatlayout aside {
+    margin: 110px 0 0 0;
+    width: 100%;
+    border-radius: 0%;
+    padding: 0 30px;
+  }
+  body .flexboxlayout aside img, body .floatlayout aside img {
+    max-width: 50%;
+  }
+  body .flexboxlayout aside .info, body .floatlayout aside .info {
+    width: 100%;
+    font-size: 4vw;
+    justify-content: space-between;
+  }
+  body .flexboxlayout aside .info .info__headings h4, body .floatlayout aside .info .info__headings h4 {
+    margin: 20px 35px 20px 0;
+  }
+  body .flexboxlayout aside .info .info__content, body .floatlayout aside .info .info__content {
+    margin-right: 60px;
+  }
+  body .flexboxlayout aside .social-networks, body .floatlayout aside .social-networks {
+    font-size: 1.1rem;
+    margin: 20px 0 20px 0;
+  }
+  body .flexboxlayout section, body .floatlayout section {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 0 30px;
+    border-radius: 0%;
+  }
+  body .flexboxlayout section .greeting, body .floatlayout section .greeting {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+  }
+  body .flexboxlayout section .greeting h1, body .floatlayout section .greeting h1 {
+    margin: 10px 0;
+    font-size: 9vw;
+  }
+  body .flexboxlayout section .greeting hr, body .floatlayout section .greeting hr {
+    display: none;
+  }
+  body footer {
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
