@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   color: #b8b8b8;
 }
-body h1, body h4 {
+body h1,
+body h4 {
   color: #2e2e2e;
   font-family: "Roboto";
 }
@@ -41,12 +42,9 @@ body .flexboxlayout aside img {
   margin: 20px 0;
 }
 body .flexboxlayout aside .info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   width: 100%;
 }
-body .flexboxlayout aside .info .info__headings .flex {
+body .flexboxlayout aside .info .info-item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -54,18 +52,19 @@ body .flexboxlayout aside .info .info__headings .flex {
   margin: 20px 0;
   width: 100%;
 }
-body .flexboxlayout aside .info .info__headings .flex h4 {
+body .flexboxlayout aside .info .info-item h4 {
   line-height: 14px;
   font-family: "Roboto", sans-serif;
   color: #2e2e2e;
+  width: 80px;
 }
-body .flexboxlayout aside .info .info__headings .flex .info__content {
+body .flexboxlayout aside .info .info-item span {
   color: #b8b8b8;
   font-family: "Roboto Serif", serif;
   font-weight: 400;
   word-break: break-all;
 }
-body .flexboxlayout aside .info .info__headings .flex .info__content a {
+body .flexboxlayout aside .info .info-item span a {
   color: #b8b8b8;
 }
 body .flexboxlayout aside .social-networks {
@@ -161,6 +160,7 @@ body .floatlayout {
   }
   body .flexboxlayout aside,
 body .floatlayout aside {
+    display: flex;
     margin: 110px 0 0 0;
     width: 100%;
     border-radius: 0%;
@@ -172,27 +172,20 @@ body .floatlayout aside img {
   }
   body .flexboxlayout aside .info,
 body .floatlayout aside .info {
-    width: 100%;
-    font-size: 4vw;
-    justify-content: space-between;
+    font-size: 0.9rem;
   }
-  body .flexboxlayout aside .info .info__headings h4,
-body .floatlayout aside .info .info__headings h4 {
-    margin: 20px 35px 20px 0;
-  }
-  body .flexboxlayout aside .info .info__content,
-body .floatlayout aside .info .info__content {
-    margin-right: 60px;
+  body .flexboxlayout aside .info .info-item h4,
+body .floatlayout aside .info .info-item h4 {
+    width: 120px;
   }
   body .flexboxlayout aside .social-networks,
 body .floatlayout aside .social-networks {
     font-size: 1.1rem;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 30px 0;
   }
   body .flexboxlayout section,
 body .floatlayout section {
     width: 100%;
-    margin: 10px 0 10px 0;
     padding: 0 30px;
     border-radius: 0%;
   }
@@ -212,6 +205,7 @@ body .floatlayout section .greeting hr {
     display: none;
   }
   body footer {
+    margin-top: 0;
     overflow: hidden;
   }
 }

@@ -15,9 +15,10 @@ body {
     display: flex;
     flex-direction: column;
     color: $text-color;
-    h1, h4 {
+    h1,
+    h4 {
         color: $primary-color;
-        font-family: 'Roboto';
+        font-family: "Roboto";
     }
     .flexboxlayout {
         align-self: center;
@@ -46,32 +47,27 @@ body {
             }
 
             .info {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
                 width: 100%;
-                .info__headings {
-                    .flex {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: flex-start;
-                        margin: 20px 0;
-                        width: 100%;
-                        h4 {
-                            line-height: 14px;
-                            font-family: $title-font;
-                            color: $primary-color;
-                        }
-                        .info__content {
+                .info-item {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    margin: 20px 0;
+                    width: 100%;
+                    h4 {
+                        line-height: 14px;
+                        font-family: $title-font;
+                        color: $primary-color;
+                        width: 80px;
+                    }
+                    span {
+                        color: $text-color;
+                        font-family: $text-font;
+                        font-weight: 400;
+                        word-break: break-all;
+                        a {
                             color: $text-color;
-                            font-family: $text-font;
-                            font-weight: 400;
-                            word-break: break-all;
-                            a {
-                                color: $text-color;
-                                
-                            }
                         }
                     }
                 }
@@ -177,6 +173,7 @@ body {
             border-radius: 0%;
             box-shadow: none;
             aside {
+                display: flex;
                 margin: 110px 0 0 0;
                 width: 100%;
                 border-radius: 0%;
@@ -185,27 +182,21 @@ body {
                     max-width: 50%;
                 }
                 .info {
-                    width: 100%;
-                    font-size: 4vw;
-                    justify-content: space-between;
-                    .info__headings {
+                    font-size: 0.9rem;
+                    .info-item {
                         h4 {
-                            margin: 20px 35px 20px 0;
+                            width: 120px;
                         }
-                    }
-                    .info__content {
-                        margin-right: 60px;
                     }
                 }
                 .social-networks {
                     font-size: 1.1rem;
-                    margin: 20px 0 20px 0;
+                    margin: 20px 0 30px 0;
                 }
             }
 
             section {
                 width: 100%;
-                margin: 10px 0 10px 0;
                 padding: 0 30px;
                 border-radius: 0%;
                 .greeting {
@@ -224,6 +215,7 @@ body {
         }
 
         footer {
+            margin-top: 0;
             overflow: hidden;
         }
     }
